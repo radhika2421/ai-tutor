@@ -105,3 +105,38 @@ body {
         padding: 80px 20px;
     }
 }
+
+.landing-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* Space between image & text */
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px;
+}
+
+.landing-image {
+    width: 250px; /* Adjust size */
+    height: 250px;
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures image looks good */
+}
+
+.welcome-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .landing-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .landing-image {
+        width: 200px;
+        height: 200px;
+    }
+}
+
