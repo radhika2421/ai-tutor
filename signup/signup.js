@@ -5,6 +5,23 @@ const password = document.getElementById("password");
 const confirmPassword = document.getElementById("confirm-password");
 const errorMessage = document.getElementById("error-message");
 
+document.addEventListener("DOMContentLoaded", function () {
+    const studentRadio = document.getElementById("student");
+    const educatorRadio = document.getElementById("educator");
+    const educatorFields = document.getElementById("educator-fields");
+
+    function toggleEducatorFields() {
+        if (educatorRadio.checked) {
+            educatorFields.classList.remove("hidden");
+        } else {
+            educatorFields.classList.add("hidden");
+        }
+    }
+
+    studentRadio.addEventListener("change", toggleEducatorFields);
+    educatorRadio.addEventListener("change", toggleEducatorFields);
+});
+
 form.addEventListener("submit", function (event) {
     event.preventDefault(); // Prevents form from submitting
 
