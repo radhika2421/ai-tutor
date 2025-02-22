@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>SUCCESS</h2>
+            <ul class="menu">
+                <li><a href="#">📁 My Courses</a></li>
+                <li><a href="#">🎉 Events</a></li>
+                <li><a href="#">📦 Deliveries</a></li>
+                <li><a href="#">📢 Announcements</a></li>
+                <li><a href="#">💬 Messages</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content Section (Beside Sidebar) -->
+        <main class="profile-section">
+            <!-- Small User Profile -->
+            <div class="small-user-profile">
+                <img src="../img/student.jpg" alt="User Avatar" class="small-avatar">
+                <div class="user-info">
+                    <h3>Sanvi Gupta</h3>
+                    <p>IGDTUW | Passionate about UI/UX designing</p>
+                </div>
+            </div>
+
+            <!-- Header -->
+            <header class="header">
+                <h2>Profile</h2>
+                <input type="search" placeholder="Search..." />
+            </header>
+
+            <section class="user-info-section">
+                <div class="user-card">
+                    <img src="../img/student.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <h3>Sanvi Gupta</h3>
+                        <p>Joined: 24 January 2025</p>
+                        <p>City: Delhi</p>
+                        <p>Email: sanvig@example.com</p>
+                        <p>Phone: +91 9968756422</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/radhika-changia-6b8b21211/">
+                                <img src="../img/linkedin.png" alt="LinkedIn" class="social-logo">
+                            </a>
+                            <a href="https://github.com/radhika2421">
+                                <img src="../img/github.png" alt="GitHub" class="social-logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-card">
+                    <h3>Payment Details</h3>
+                    <p>Card Number: **** **** **** 1234</p>
+                    <img src="payment-icons.png" alt="Payment Methods">
+                </div>
+            </section>
+
+            <section class="courses">
+                <h3>My Courses</h3>
+                <div class="course">
+                    <h4>UX/UI Design - Websites</h4>
+                    <p>42 lessons</p>
+                    <span class="status completed">Completed</span>
+                </div>
+                <div class="course">
+                    <h4>UX/UI Design - Prototyping</h4>
+                    <p>30 lessons</p>
+                    <span class="status completed">Completed</span>
+                </div>
+                <div class="course">
+                    <h4>UX/UI Design - Animation</h4>
+                    <p>47 lessons</p>
+                    <span class="status ongoing">Start Date: 10.05.2023</span>
+                </div>
+            </section>
+
+            <section class="subscription">
+                <h3>Premium Subscription</h3>
+                <p>Unlimited courses, exclusive resources, and priority support.</p>
+                <button class="subscribe-btn">Subscribe</button>
+            </section>
+        </main>
+    </div>
+
+    <script src="student.js"></script>
+</body>
+</html>
